@@ -278,10 +278,19 @@
   -->
   <item label="MPlayer">
     <action name="Execute">
-      <command>gmplayer</command>
+      <command>mplayer</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>MPlayer</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="VLC Player">
+    <action name="Execute">
+      <command>vlc</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>vlc</wmclass>
       </startupnotify>
     </action>
   </item>
@@ -420,9 +429,9 @@
 
 <menu id="root-menu" label="Openbox 3">
   <separator label="Applications" />
-  <menu id="apps-accessories-menu"/>
+	<!-- <menu id="apps-accessories-menu"/> -->
   <menu id="apps-editors-menu"/>
-  <menu id="apps-graphics-menu"/>
+	<!-- <menu id="apps-graphics-menu"/> -->
   <menu id="apps-net-menu"/>
 	<!-- <menu id="apps-office-menu"/> -->
   <menu id="apps-multimedia-menu"/>
