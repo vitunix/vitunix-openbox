@@ -1,0 +1,31 @@
+/*
+#
+#     ----->  Maintained by team Vitunix (https://github.com/vitunix) <----
+#                               >> A Simple and unique polybar <<
+#                           -----> Mail us at (vitunix@proton.me) <-----
+#      -----> configured by heapbytes (https://github.com/heapbytes) <----
+#
+ Confirm Dialog */
+
+@import "colors.rasi"
+
+* {
+    background-color:       @bg;
+    text-color:             @fg;
+	font:				 	"Iosevka Nerd Font 10";
+}
+
+window {
+    width:      			225px;
+    padding:    			25px;
+    border:					0px;
+    border-radius:          12px;
+    border-color:           @bg1;
+    location:               center;
+    y-offset:               -2em;
+}
+
+entry {
+    expand: 				true;
+    text-color:				@bg2;
+}

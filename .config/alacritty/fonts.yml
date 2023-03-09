@@ -1,0 +1,42 @@
+####################################################################################
+#     >>  Maintained by team Vitunix (https://github.com/vitunix)  <<              #
+#             >> A Simple and unique Arch based distro <<                          #
+#             -----> Mail us at (vitunix@proton.me) <-----                         #
+#     ----> configured by heapbytes (https://github.com/heapbytes) <-----          #
+####################################################################################
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    family: "JetBrainsMono Nerd Font" 
+    font: 13
+    #style: Regular
+
+  # Bold font face
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    #style: Bold
+
+  # Italic font face
+  italic:
+    family: "JetBrainsMono Nerd Font"
+    #style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: "JetBrainsMono Nerd Font"
+    #style: Bold Italic
+
+  # Point size
+  size: 13
+
+  # Offset
+  #offset:
+  #  x: 0
+  #  y: 0
+
+  # Glyph offset
+  #glyph_offset:
+  #  x: 0
+  #  y: 0

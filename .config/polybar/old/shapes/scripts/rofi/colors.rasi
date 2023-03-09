@@ -1,0 +1,17 @@
+/*
+#
+#     ----->  Maintained by team Vitunix (https://github.com/vitunix) <----
+#                               >> A Simple and unique polybar <<
+#                           -----> Mail us at (vitunix@proton.me) <-----
+#      -----> configured by heapbytes (https://github.com/heapbytes) <----
+#
+colors */
+
+* {
+  al:    #00000000;
+  bg:    #1F1F1FFF;
+  bg1:   #1565C0FF;
+  bg2:   #1976D2FF;
+  bg3:   #1E88E5FF;
+  fg:    #FFFFFFFF;
+}

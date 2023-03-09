@@ -1,0 +1,102 @@
+####################################################################################
+#     >>  Maintained by team Vitunix (https://github.com/vitunix)  <<              #
+#             >> A Simple and unique Arch based distro <<                          #
+#             -----> Mail us at (vitunix@proton.me) <-----                         #
+#     ----> configured by heapbytes (https://github.com/heapbytes) <-----          #
+####################################################################################
+## Configuration for Alacritty, the GPU enhanced terminal emulator.
+## It's a very basic and simple config file, for full configuration...
+## See, /usr/share/doc/alacritty/example/alacritty.yml
+
+## Import files (Colors, Fonts, Etc)
+import:
+
+- ~/.config/alacritty/colorschemes/catppuccin-mocha.yml
+- ~/.config/alacritty/fonts.yml
+
+## Set environment variables
+env:
+  TERM: alacritty
+  WINIT_X11_SCALE_FACTOR: '1.0'
+
+## Terminal window settings
+window:
+  dimensions:
+    columns: 82
+    lines: 25
+
+  padding:
+    x: 12
+    y: 12
+
+  decorations: full
+  startup_mode: Windowed
+  dynamic_title: true
+
+  ## scrolling
+  history: 10000
+  multiplier: 3
+
+## Background opacity
+# background_opacity: 1.0
+window.opacity: 0
+
+## Cursor
+cursor:
+  style:
+    shape: Block
+    blinking: On
+
+  unfocused_hollow: false
+
+## Live config reload
+live_config_reload: true
+colors:
+  # Default colors
+  primary:
+    background: '#1F2D3A'
+    foreground: '#1abc9c'
+
+    dim_foreground: '#dbdbdb'
+    bright_foreground: '#d9d9d9'
+    dim_background: '#202020' # not sure
+    bright_background: '#3a3a3a' # not sure
+
+  # Cursor colors
+  cursor:
+    text: '#2c2c2c'
+    cursor: '#d9d9d9'
+
+  # Normal colors
+  normal:
+    black: '#2c3e50'
+    red: '#c0392b'
+    green: '#27ae60'
+    yellow: '#f39c12'
+    blue: '#2980b9'
+    magenta: '#8e44ad'
+    cyan: '#16a085'
+    white: '#bdc3c7'
+
+  # Bright colors
+  bright:
+    black: '#34495e'
+    red: '#e74c3c'
+    green: '#2ecc71'
+    yellow: '#f1c40f'
+    blue: '#3498db'
+    magenta: '#9b59b6'
+    cyan: '#2AA198'
+    white: '#ecf0f1'
+
+  # Dim colors
+  dim:
+    black: '#232323'
+    red: '#74423f'
+    green: '#5e6547'
+    yellow: '#8b7653'
+    blue: '#556b79'
+    magenta: '#6e4962'
+    cyan: '#5c8482'
+    white: '#828282'
+theme: Afterglow
