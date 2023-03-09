@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Afterpiece</name>
+    <name>Blocks</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -123,10 +123,10 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-    <name>desktop 1</name>
-    <name>desktop 2</name>
-    -->
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -323,6 +323,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
+    <!--
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
@@ -330,6 +331,16 @@
           <name>Konqueror</name>
         </startupnotify>
         <command>kfmclient openProfile filemanagement</command>
+      </action>
+	    </keybind>
+    -->
+    <keybind key="W-Return">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Kitty</name>
+        </startupnotify>
+        <command>kitty</command>
       </action>
     </keybind>
     <keybind key="W-S-Left">
@@ -373,120 +384,114 @@
         <width>2/3</width>
       </action>
     </keybind>
-    
     <keybind key="W-Right">
-	<action name="Unmaximize"/>
-	<action name="MoveResizeTo">
-		<x>-0</x>
-        </action>
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+      </action>
     </keybind>
     <keybind key="W-Left">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-	      <x>0</x>
+        <x>0</x>
       </action>
     </keybind>
     <keybind key="W-Down">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-	      <y>-0</y>
-	      <height>50%</height>
+        <y>-0</y>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-Up">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-	      <y>0</y>
-	      <height>50%</height>
+        <y>0</y>
+        <height>50%</height>
       </action>
     </keybind>
-
     <keybind key="W-S-1">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-	<x>0</x>
-	<y>0</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <x>0</x>
+        <y>0</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
     <keybind key="W-S-2">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>center</x>
-	<y>0</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <y>0</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
     <keybind key="W-S-3">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-0</x>
-	<y>0</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <y>0</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
-
     <keybind key="W-S-4">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-	<x>0</x>
-	<y>center</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <x>0</x>
+        <y>center</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
     <keybind key="W-S-5">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>center</x>
-	<y>center</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <y>center</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
     <keybind key="W-S-6">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-0</x>
-	<y>center</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <y>center</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
-
     <keybind key="W-S-7">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-	<x>0</x>
-	<y>-0</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <x>0</x>
+        <y>-0</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
     <keybind key="W-S-8">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>center</x>
-	<y>-0</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <y>-0</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
     <keybind key="W-S-9">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-0</x>
-	<y>-0</y>
-	<width>1/3</width>
-	<height>1/3</height>
+        <y>-0</y>
+        <width>1/3</width>
+        <height>1/3</height>
       </action>
     </keybind>
   </keyboard>
-
-
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->

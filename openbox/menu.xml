@@ -112,6 +112,14 @@
       </startupnotify>
     </action>
   </item>
+  <item label="Kitty">
+    <action name="Execute">
+      <command>kitty</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
 
   <!--
   <item label="Konsole">

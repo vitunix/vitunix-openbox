@@ -2,7 +2,7 @@
 # Note: xsetroot -solid is incompatible with picom
 # which is why hsetroot is used instead
 hsetroot -solid '#000000'
-feh --bg-center ~/.config/wallpapers/wallpaper-blue.jpg
+feh --bg-center ~/.config/wallpapers/waves.png
 # Map capslock to esc
 #setxkbmap -option caps:escape
 
